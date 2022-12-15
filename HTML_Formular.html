@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML5 Formular</title>
+		
+	</head>
+		
+	<body>
+		<form action="#">
+				<label for="vorname">Vorname:</label><input type="text" size="100" maxlength="10" name="vorname" id="vorname" value="Vorname" required /><br>
+				Passwort:<input type="password" size="10" name="password" id="password"/><br>
+				<input type="search" placeholder="Suche" name="suchen" id="suchen"/><br>
+				
+				<input type="number" name="number" min="5" max="20" value="7"/><br>
+				<input type="range" name="range" min="-20" max="20"><br>
+				<input type="color" name="color" value="#00FF00"><br>
+				
+				<input type="date" name="date"><br>
+				<input type="time" name="time"><br>
+				<input type="email" name="email"><br><br>
+				
+				<textarea name="kommentar" id="kommentar" rows="10" cols="25"></textarea><br>
+				
+				<select name="artikel" size="4" multiple>
+					<option value="A101">Monitor</option>
+					<option value="A102">Orgel</option>
+					<option value="A103" selected>Rasenmäher</option>
+					<option value="A104">Klavier</option>
+				</select><br><br>
+				
+				<fieldset>
+				<legend>Hobbies</legend>
+					<input type="checkbox" name="hobby1" id="hobby1" value="lesen"/>Lesen<br />
+					<input type="checkbox" name="hobby2" id="hobby2" value="tanzen"/><label for="hobby2">Tanzen</label><br />
+					<input type="checkbox" name="hobby3" id="hobby3" value="reiten"/>Reiten<br />
+				</fieldset><br><br>
+				
+				<input type="radio" name="fahrt">Hinfahrt<br>
+				<input type="radio" name="fahrt">Hin- und Rückfahrt<br><br>
+				
+				<input type="submit" value="Absenden"><br>
+		</form>
+	</body>
+</html>
